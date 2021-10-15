@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbag Configurator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">HANDBAG CONFIGURATOR</div>
+
+    <div id="configurator">
+        <div id="preview"  class="section">
+            <div id="selectedItems">SELECTED ITEMS
+                <ul id="selectedList"></ul>
+            </div>
+            <svg id="handbag"></svg>
+            <svg id="features"></svg>
+            <button id="reset" type="button">RESET</button>
+        </div>
+
+        <div id="items"  class="section">
+            <div class="item" id="text_keychain" data-feature="keychain">
+                <img id="item_keychain" src="assets/feature_keychain.png"/>
+                <label>Keychain</label>
+            </div>
+            <div class="item" id="text_tassel" data-feature="tassel">
+                <img id="item_tassel" src="assets/feature_tassel.png"/>
+                <label>Tassel</label>
+            </div>
+            <div class="item" id="text_ribbon" data-feature="ribbon">
+                <img id="item_ribbon" src="assets/feature_ribbon.png"/>
+                <label>Ribbon</label>
+            </div>
+            <div class="item" id="text_butterfly"  data-feature="butterfly">
+                <img id="item_butterfly" src="assets/feature_butterfly.png"/>
+                <label>butterfly pin</label>
+            </div>
+            <div class="item" id="text_flower" data-feature="flower">
+                <img id="item_flower" src="assets/feature_flower.png"/>
+                <label>Flower</label>
+            </div>
+        </div>
+
+        <div id="colors"  class="section">
+            <button type="button" id="addColor">ADD NEW COLOR</button>
+            <div class="color" style="background-color:#3637E0;"><label>#ff0000</label></div>
+            <div class="color" style="background-color:#3C70FC;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#7748F7;"><label>#00ff00</label></div>
+            <div class="color" style="background-color:#9236E0;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#D83CFC;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#E32256;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#FF0000;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#FD5F0D;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#FAAF01;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#FDF228;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#D2FF29;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#09FA05;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#02B93C;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#2DE2C3;"><label>#ffdcdc</label></div>
+            <div class="color" style="background-color:#00E6E4;"><label>#ffdcdc</label></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

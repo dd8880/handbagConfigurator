@@ -1,0 +1,163 @@
+body {
+    background-color: #c2e0df;
+}
+
+#title {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 55px;
+}
+
+.shadow {
+    pointer-events: none;
+}
+.g_to_interact_with path{
+    pointer-events: all;
+}
+.over {
+    fill: grey;
+}
+
+#configurator {
+    display: grid;
+    grid-template-areas: "preview items colors";
+    grid-column-gap: 25px;
+}
+.section {
+    border-radius: 50px;
+    background-color: #fdffff;
+    box-shadow: 2px 3px 20px 8px #e4f1f1;
+}
+
+#preview {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 900px;
+    width: 800px;
+    grid-area: preview;
+}
+#handbag {
+    margin-top: 80px;
+    margin-left: 125px;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+}
+#features {
+    pointer-events: none;
+    position: relative;
+    margin-top: 50px;
+    height: 50%;
+    width: 40%;
+}
+.feature {
+    position: absolute;
+}
+.hide {
+    opacity: 0;
+}
+#keychain {
+    transform: translate(460px, 360px) rotate(-20deg);
+}
+#tassel {
+    transform: translate(480px, 300px) rotate(-10deg);
+}
+#butterfly {
+    transform: translate(215px, 255px);
+}
+#flower {
+    transform: translate(250px, 255px);
+}
+
+#selectedItems {
+    border: 8px solid #ffdcdc;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 150px;
+    width: 650px;
+    padding-block: 10px;
+}
+#selectedList {
+    list-style-type: none;
+} 
+#selectedList li {
+    display: inline-block;
+}
+#selectedList li img {
+    height: 120px;
+    width: 120px;
+}
+
+#reset {
+    margin-top: 600px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+
+#items {
+    margin-top: 50px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 400px;
+    grid-area: items;
+}
+.item {
+    margin-block: 5px;
+    height: 190px;
+    width: auto;
+}
+.item:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+.item img {
+    pointer-events: none;
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+}
+.chosenItem {
+    font-weight: bold;
+    background-color: #ffdcdc;
+}
+
+#colors {
+    grid-area: colors;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 50px;
+    height: 900px;
+    width: 400px;
+    text-align: center;
+}
+.color {
+    margin-block: 5px;
+    height: 100px;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color:hover {
+    border: 8px solid lightgrey;
+}
+.chosenColor {
+    font-weight: bold;
+    border: 8px solid grey;
+}
+
+#addColor {
+    margin-block: 5px;
+    height: 50px;
+    width: 200px;
+    border: none;
+}
+#addColor:hover {
+    background-color: lightgrey;
+}
+
+
